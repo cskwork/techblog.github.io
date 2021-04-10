@@ -1,6 +1,10 @@
 ## Welcome to GitHub Pages
 
-{% link _posts/2021-04-10-Tech-Blog-Structure.md %}
+{% if page.show_sidebar %}
+  <div class="sidebar">
+    sidebar content
+  </div>
+{% endif %}
 
 <ul>
   {% for post in site.posts %}
